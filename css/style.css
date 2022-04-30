@@ -524,7 +524,6 @@ font-weight: 700;
  
    max-width: 100%;
    background-position: center center;
-   margin-bottom: 15px;
  
 }
 
@@ -536,7 +535,6 @@ font-weight: 700;
 .news-list-item {
   padding-left: 27px;
   padding-right: 3px;
-  margin-bottom: 15px;
    }
 
   
@@ -980,7 +978,7 @@ font-weight: 700;
   margin-left: auto;
   margin-right: auto;
   border: 1px solid blue; 
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 
 .product {
@@ -1005,7 +1003,7 @@ max-width: 100%;
   outline: 3px solid #b59f5b;
   outline-offset: 15px;
 
-  /* height: 50%; */
+  height: 50%;
   margin-top: 30px;
 
 }
@@ -1120,18 +1118,6 @@ background-color: #323232;
   line-height: 1.3;
 }
 }
-
-@media (max-width: 640px)  {
-  .product {
-    width: 100%;
-   
- }
- 
- .product-title {
-  font-size: 16px;
-  line-height: 1.3;
-}
-
 
 
 /* Социальные сети-иконки - Footer*/
