@@ -25,7 +25,6 @@ body {
 
 .header {
   width: 100%;
-  max-width: 1440px;
   background-image: url("../images/banner-bg.jpg");
   background-color: #000000;
   background-repeat: no-repeat;
@@ -252,21 +251,19 @@ body {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1440px;
- }
+  }
 
 .trends-box {
   text-align: center;
-  padding-top: 61px;
-  padding-bottom: 61px;
+  padding-top: 57px;
+  padding-bottom: 28px;
 }
 
 .trends-title {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 20px;
-  font-weight: 700;
-}
+  }
 
 @media (min-width: 641px) and (max-width: 1199px) {
   .trends-title {
@@ -286,7 +283,7 @@ body {
   height: 2px;
   background-color: #b59f5b;
   display: block;
-  margin-top: 14px;
+  margin-top: 9px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -298,12 +295,12 @@ body {
   box-sizing: border-box;
   margin-bottom: 66px;
   justify-content: space-between;
+  border: 1px solid green;
   }
-
-
 
 .trend {
   width: calc(25% - 4px);
+  height: 318px;
   background-color: #eff6f1;
   background-repeat: no-repeat;
   background-position: center center;
@@ -313,16 +310,26 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  padding: 10px;
-}
+  padding: 15px 10px;
+  }
 
+@media (min-width: 641px) and (max-width: 1199px) {
+  .trend {
+    height: 248px;
+  }
+}  
+
+@media (max-width: 640px) {
+  .trend { 
+    height: 232px;
+  } 
+}
 
 .trend:nth-child(2),
 .trend:nth-child(3) {
   margin-left: 2px;
   margin-right: 2px;
 }
-
 
 .trend:first-child {
   margin-right: 2px;
@@ -335,7 +342,7 @@ body {
 @media (min-width: 641px) and (max-width: 1199px) and (orientation: portrait) {
   .trend {
     width: calc(50% - 4px);
-  }
+    }
 
   .trend:nth-child(n+3) {
     margin-top: 4px;
@@ -345,7 +352,6 @@ body {
 @media (max-width: 640px) and (orientation: portrait) {
   .trend {
     width: 100%;
-
   }
 
   .trend:nth-child(n+2) {
@@ -401,7 +407,7 @@ body {
 
 .trend::after {
   content: "";
-  background-color: #606260;
+  background-color: #000000;
   position: absolute;
   top: 0;
   left: 0;
@@ -416,8 +422,10 @@ body {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  width: 90%;
-  padding: 10px;
+  width: 100%;
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-right: 5%;
   border: 3px solid #b59f5b;
 }
 
@@ -425,7 +433,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
-  padding: 3px;
+  padding-top: 3px;
 }
 
 .content-trend {
@@ -434,6 +442,8 @@ body {
   color: #ffffff;
   font-weight: 700;
   text-transform: uppercase;
+  margin-bottom: 1.5em;
+  margin-top: 0.8em;
 }
 
 @media (max-width: 1199px) {
@@ -464,11 +474,11 @@ body {
 
 .trend-categories1-1 {
   text-decoration: none;
+  text-transform: uppercase;
   font-size: 14px;
-  line-height: 2.8;
   color: #b59f5b;
   font-weight: 700;
-}
+ }
 
 .trend-categories1-1:nth-child(n+1) {
   margin-right: 20px;
@@ -519,10 +529,13 @@ body {
   margin-top: 55px;
 }
 
-.img {
+.img  {
   max-width: 100%;
   background-position: center center;
+  width: 381px;
+  min-width: 381px;
 }
+
 
 .news-list-item {
   padding-left: 27px;
@@ -532,6 +545,11 @@ body {
 @media (max-width: 1199px) {
   .news-list {
    flex-direction: column;
+  }
+
+  .img {
+    width: 100%;
+    min-width: 100%;
   }
 
 
@@ -594,14 +612,18 @@ body {
 }
 
 @media (min-width:641px) and (max-width: 1199px) {
-  .new-list-title {
+  .news {
+    margin-left: 15px;
+  }
+  
+   .new-list-title {
     font-size: 17px;
     line-height: 1.3;
   }
 
   .categories {
     margin-top: 15px;
-    margin-bottom: 15pz;
+    margin-bottom: 15px;
   }
 }
 
@@ -650,9 +672,11 @@ body {
 
 @media (max-width: 640px) {
   .news-list img {
-
     width: 100%;
     background-position: center center;
+    margin-left: auto;
+    margin-right: auto;
+
   }
 
   .news-list-item {
@@ -670,7 +694,7 @@ body {
   margin-right: auto;
 }
 
-@media (max-width: 641px) {
+@media (max-width: 640px) {
   .content {
     display: flex;
     flex-direction: column;
@@ -695,7 +719,7 @@ body {
   margin-top: 0;
   margin-bottom: 36px;
   text-align: center;
-}
+ }
 
 @media (max-width: 640px) {
   .new-list-title {
@@ -745,6 +769,11 @@ body {
   .widget-title-link {
     font-size: 16px;
   }
+
+  .widget-title {
+  margin-top: 42px;
+  }
+
 }
 
 .widget-title-link:hover {
@@ -1194,12 +1223,6 @@ body {
 
 }
 
-
-
-
-
-
-
 @media (max-width: 640px) {
   .popup-form {
     width: 327px;
@@ -1282,13 +1305,10 @@ body {
   margin-bottom: 33px;
 }
 
-
 .select:focus,
 .textarea:focus {
   outline: 1px solid #b5a35b;
-
 }
-
 
 .select1 {
   border: none;
@@ -1297,17 +1317,16 @@ body {
 .radio-group-text::before {
   content: "";
   display: inline-block;
-  width: 16px;
-  height: 16px;
+  width: 22px;
+  height: 22px;
   margin-right: 5px;
-
-
   vertical-align: middle;
-
   background-image: url("../svg/form-empty-circle.svg");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 20px;
+  background-position: center center;
+  background-size: 18px;
+  
+
 
 
 }
@@ -1344,23 +1363,15 @@ body {
 
 
 .textarea {
-  /* width: 100%; */
-  max-width: 100%;
-  min-width: 100%;
+  width: 100%;
+  height: 130px;
   background-color: #f4f7f6;
-  /* min-width: 330px;
-  max-width: 340px; */
-
-  min-height: 130px;
-  max-height: 150px;
   padding: 10px;
   font-family: inherit;
   border: none;
-  /* margin-top: 13px;
-  margin-bottom: 25px; */
   margin-top: 1%;
   margin-bottom: 2%;
-
+  resize: none;
 }
 
 .submit-popup {
